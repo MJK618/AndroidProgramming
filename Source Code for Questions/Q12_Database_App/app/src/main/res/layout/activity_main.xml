@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/AppHeading"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/surname"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_surname"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/marks"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp" />
+
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_Marks"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/id"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp" />
+
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginTop="-10dp"
+        android:layout_toEndOf="@+id/textView"
+        android:autofillHints=""
+        android:inputType="text"
+        tools:ignore="LabelFor"
+        android:layout_toRightOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:autofillHints=""
+        android:inputType="text"
+        tools:ignore="LabelFor"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editText_Marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_surname"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:height="15dp"
+        android:autofillHints=""
+        android:inputType="number"
+        tools:ignore="LabelFor"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_Marks"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/textView_id"
+        android:autofillHints=""
+        android:inputType="number"
+        tools:ignore="LabelFor"
+        android:layout_toRightOf="@id/textView_id"
+        android:layout_marginLeft="1dp" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_Marks"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/add_data"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="370dp"
+        android:layout_toEndOf="@id/button_add"
+        android:height="15dp"
+        android:text="@string/view_all"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@id/button_add" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_add"
+        android:layout_marginStart="55dp"
+        android:text="@string/update"
+        android:layout_marginLeft="55dp" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_viewAll"
+        android:layout_marginStart="118dp"
+        android:layout_toEndOf="@id/button_update"
+        android:text="@string/delete"
+        android:layout_marginLeft="118dp"
+        android:layout_toRightOf="@id/button_update" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:onClick="clear"
+        android:text="@string/reset"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignParentRight="false" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:text="@string/for_update_delete_enter_id_first"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:layout_marginLeft="25dp" />
+
+</RelativeLayout>
