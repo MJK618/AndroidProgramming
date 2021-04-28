@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Q10_Basic_Login_App"
